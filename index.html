@@ -247,6 +247,8 @@
   .score-circle.mid { background: var(--amber-light); color: var(--amber); border: 3px solid var(--amber); }
   .score-circle.low { background: var(--rose-light); color: var(--rose); border: 3px solid var(--rose); }
 
+  #menu-toggle { display: none; position: fixed; top: 16px; left: 16px; z-index: 200; background: var(--ink); color: #fff; border: none; border-radius: 8px; padding: 8px 10px; font-size: 18px; cursor: pointer; }
+
   @media (max-width: 768px) {
     #sidebar { transform: translateX(-100%); }
     #sidebar.open { transform: none; }
@@ -255,8 +257,6 @@
     .page { padding: 20px; }
     #menu-toggle { display: flex; }
   }
-
-  #menu-toggle { display: none; position: fixed; top: 16px; left: 16px; z-index: 200; background: var(--ink); color: #fff; border: none; border-radius: 8px; padding: 8px 10px; font-size: 18px; cursor: pointer; }
 </style>
 </head>
 <body>
