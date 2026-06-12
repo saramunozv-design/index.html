@@ -27,25 +27,47 @@
     display: flex;
     min-height: 100vh;
   }
-/* --- NUEVAS TIPOGRAFÍAS --- */
-
-/* 1. Texto Normal (Poppins) */
-body, input, textarea, button, span, p, li {
-  font-family: 'Poppins', sans-serif !important;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  display: flex;
+  min-height: 100vh;
 }
-
-/* 2. Títulos (Titan One) */
+   /* --- ESTILOS GENERALES Y FUENTES --- */
 h1, h2, h3, .main-title {
   font-family: 'Titan One', cursive !important;
-  font-weight: normal;
-  letter-spacing: 0.5px;
+  font-weight: normal !important;
+  color: #4A3E3D !important;
 }
 
-/* 3. Frase Motivadora (Sacramento) */
-.quote-container p, blockquote, q, .banner-frase p {
+.frase-motivadora, blockquote, q, .quote-container p {
   font-family: 'Sacramento', cursive !important;
-  font-size: 32px !important; /* La hacemos un poco más grande para que la cursiva se lea perfecta */
-  font-weight: 400;
+  font-size: 34px !important; /* Un poco más grande para que la cursiva resalte */
+  color: #4A3E3D !important;
+}
+
+/* --- LOOK PASTEL (PREVALECE SOBRE EL SIDEBAR) --- */
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #FFFDF6 !important; 
+}
+
+#sidebar, .sidebar, aside, [class*="sidebar"] {
+  background: #FFE5EC !important; /* Rosa pastel suave */
+  background-color: #FFE5EC !important;
+  color: #4A3E3D !important; /* Letras oscuras */
+}
+
+#sidebar a, #sidebar span, .sidebar a, .sidebar li, #sidebar div, #sidebar h2 {
+  color: #4A3E3D !important; /* Fuerza a que todo el texto del menú sea oscuro */
+}
+
+.quote-container, .banner-frase, [class*="quote"], [class*="banner"] {
+  background: #FFF5CC !important; /* Amarillo pastel */
+  background-color: #FFF5CC !important;
+  color: #4A3E3D !important;
+  border: 1px solid #FFC2CD !important;
 }
   /* ── SIDEBAR ── */
   #sidebar {
